@@ -1,0 +1,17 @@
+.main_block {
+    background-color: #e8b35e;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main_greeting_container {
+    background-color: #c2bcbc;
+}
+
+.main_photo {
+    width: 350px;
+    height: 500px;
+    background-color: #c2bcbc;
+}

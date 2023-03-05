@@ -1,0 +1,23 @@
+.skill {
+    background-color: #9dc6fa;
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill_icon {
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+}
+
+.skill_title {
+    background-color: dodgerblue;
+}
+
+.skill_description{
+    background-color: orange;
+}
