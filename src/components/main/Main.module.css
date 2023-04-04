@@ -10,6 +10,8 @@
     padding: 0 35px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    border: 1px solid red;
 }
 
 .main_photo_wrapper {
@@ -19,45 +21,4 @@
 .main_photo {
     width: 410px;
     height: 410px;
-}
-
-.greeting {
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #FFFFFF;
-}
-
-.main_FirstName {
-    font-family: 'Poppins', sans-serif;
-    font-size: 90px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #FFFFFF;
-}
-
-.main_lastName {
-    display: block;
-    font-family: 'Poppins', sans-serif;
-    font-size: 90px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #fd562a;
-}
-
-.main_based {
-    font-family: 'Open-sans', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #b0aac0;
-}
-
-.main_frontend {
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #FFFFFF;
 }

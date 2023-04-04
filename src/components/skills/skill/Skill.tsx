@@ -3,21 +3,21 @@ import s from './Skill.module.css'
 
 type SkillPropsType = {
     title: string
-    description: string
+    icon: any
 }
 
 export const Skill: React.FC<SkillPropsType> = (
     {
-        title, description
+        title,
+        icon
     }
 ) => {
     return (
         <div className={s.skill}>
             <div className={s.skill_icon}>
-                icon
+                <img className={s.skill_icon} src={icon} alt="Skill icon"/>
             </div>
             <h3 className={s.skill_title}>{title}</h3>
-            <span className={s.skill_description}>{description}</span>
         </div>
     );
 };

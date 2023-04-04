@@ -2,18 +2,53 @@ import React from 'react';
 import s from './Skills.module.css'
 import sc from '../../common/styles/container.module.css'
 import {Skill} from "./skill/Skill";
+import {BlockTitle} from "../../common/components/BlockTitle";
+import reactIcon from '../../assets/images/react2.png'
+import reduxIcon from '../../assets/images/redux.svg'
+import jsIcon from '../../assets/images/js.png'
+import tsIcon from '../../assets/images/typescript.png'
+import axiosIcon from '../../assets/images/axios.png'
+import sassIcon from '../../assets/images/sass.png'
+import htmlIcon from '../../assets/images/HTML.png'
+import apiIcon from '../../assets/images/api.png'
+import unitTestsIcon from '../../assets/images/unit.png'
+import storyBookIcon from '../../assets/images/storybook.svg'
+import postmanIcon from '../../assets/images/postman.svg'
+import muiIcon from '../../assets/images/mui.png'
+import gitIcon from '../../assets/images/git.png'
+import antIcon from '../../assets/images/antd.png'
 
 export const Skills = () => {
+
+    const skills = [
+        {title: 'React', icon: reactIcon},
+        {title: 'Redux Toolkit', icon: reduxIcon},
+        {title: 'TypeScript', icon: tsIcon},
+        {title: 'JavaScript', icon: jsIcon},
+        {title: 'REST API', icon: apiIcon},
+        {title: 'Axios', icon: axiosIcon},
+        {title: 'HTML5', icon: htmlIcon},
+        {title: 'SASS', icon: sassIcon},
+        {title: 'Git', icon: gitIcon},
+        {title: 'Unit Tests', icon: unitTestsIcon},
+        {title: 'Postman', icon: postmanIcon},
+        {title: 'MUI', icon: muiIcon},
+        {title: 'AntDesign', icon: antIcon},
+        {title: 'StoryBook', icon: storyBookIcon},
+    ]
+
+    const skillsList = skills.map(skill => {
+        return (
+            <Skill title={skill.title} icon={skill.icon} />
+        )
+    })
+
     return (
         <div className={s.skills_block}>
             <div className={`${s.skills_container} ${sc.container}`}>
-                <div className={s.skills_title_container}>
-                    <h3 className={s.skills_title}>Skills</h3>
-                </div>
+               <BlockTitle title={'skills'}/>
                 <div className={s.skills}>
-                    <Skill title={'React'} description={'React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.'} />
-                    <Skill title={'JS'} description={'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.'} />
-                    <Skill title={'CSS'} description={'Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.'} />
+                    {skillsList}
                 </div>
             </div>
         </div>
