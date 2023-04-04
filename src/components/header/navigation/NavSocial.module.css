@@ -3,7 +3,7 @@
     position: relative;
 }
 
-.social_list::before {
+.social_list:before {
     content: '';
     width: 1px;
     height: 25px;
@@ -16,4 +16,10 @@
 .social_item {
     padding: 8px 19px;
     font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+   .social_list:before{
+        display: none;
+   }
 }

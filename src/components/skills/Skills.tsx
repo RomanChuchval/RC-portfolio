@@ -20,6 +20,7 @@ import antIcon from '../../assets/images/antd.png'
 
 export const Skills = () => {
 
+
     const skills = [
         {title: 'React', icon: reactIcon},
         {title: 'Redux Toolkit', icon: reduxIcon},
@@ -27,7 +28,7 @@ export const Skills = () => {
         {title: 'JavaScript', icon: jsIcon},
         {title: 'REST API', icon: apiIcon},
         {title: 'Axios', icon: axiosIcon},
-        {title: 'HTML5', icon: htmlIcon},
+        {title: 'HTML', icon: htmlIcon},
         {title: 'SASS', icon: sassIcon},
         {title: 'Git', icon: gitIcon},
         {title: 'Unit Tests', icon: unitTestsIcon},
@@ -36,12 +37,12 @@ export const Skills = () => {
         {title: 'AntDesign', icon: antIcon},
         {title: 'StoryBook', icon: storyBookIcon},
     ]
-
     const skillsList = skills.map(skill => {
         return (
-            <Skill title={skill.title} icon={skill.icon} />
+            <Skill key={skill.title} title={skill.title} icon={skill.icon} />
         )
     })
+
 
     return (
         <div className={s.skills_block}>

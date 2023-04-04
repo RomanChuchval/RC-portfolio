@@ -1,5 +1,8 @@
 .main_buttons_wrapper {
     margin-top: 60px;
+    display: flex;
+    align-items: center;
+    height: max-content;
 }
 
 .main_btn {
@@ -22,4 +25,16 @@
     font-weight: 700;
     text-transform: uppercase;
     border: 2px solid #fd562a;
+}
+
+@media screen and (max-width: 1050px ) {
+    .main_btn{
+        margin: 10px;
+    }
+    .ghost_btn{
+        margin: 10px ;
+    }
+    .main_buttons_wrapper{
+        flex-direction: column;
+    }
 }

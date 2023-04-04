@@ -15,7 +15,7 @@ export const Main = () => {
                     <div className={s.main_photo_wrapper}>
                         <img className={s.main_photo} src={myPhoto} alt="my_photo"/>
                     </div>
-                    <div>
+                    <div className={s.greeting_wrapper}>
                         <Greeting/>
                         <MainButtons/>
                     </div>

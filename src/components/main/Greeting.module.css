@@ -1,3 +1,7 @@
+.greeting_wrapper {
+    margin-top: 15px;
+}
+
 .greeting {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
@@ -6,7 +10,7 @@
     color: #FFFFFF;
 }
 
-.main_FirstName {
+.main_firstName {
     font-family: 'Poppins', sans-serif;
     font-size: 90px;
     font-weight: 700;
@@ -32,9 +36,32 @@
 }
 
 .main_frontend {
+    padding-bottom: 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 1.2;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 1050px ) {
+    .main_firstName {
+        font-size: 55px;
+    }
+
+    .main_lastName {
+        font-size: 55px;
+    }
+
+    .main_based {
+        font-size: 18px;
+    }
+
+    .main_frontend {
+        font-size: 18px;
+    }
+
+    .greeting_wrapper{
+        width: 324px;
+    }
 }

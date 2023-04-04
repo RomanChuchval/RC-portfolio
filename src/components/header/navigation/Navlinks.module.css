@@ -9,3 +9,9 @@
 .navlink_item {
     padding: 8px 19px;
 }
+
+@media screen and (max-width: 426px) {
+    .navlink_item {
+        padding: 5px;
+    }
+}

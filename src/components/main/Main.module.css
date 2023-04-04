@@ -1,6 +1,6 @@
 .main_block {
     background-color: #212228;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -11,14 +11,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 
 .main_photo_wrapper {
     width: 624px;
+    display: flex;
 }
 
 .main_photo {
     width: 410px;
     height: 410px;
+}
+
+.greeting_wrapper {
+
+}
+
+@media screen and (max-width: 1050px ) {
+    .main_photo{
+        width: 350px;
+        height: 350px;
+    }
+    .main_photo_wrapper{
+        width: 400px;
+        margin-top: 130px;
+    }
+    .main_container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .main_photo_wrapper {
+        justify-content: center;
+    }
 }
