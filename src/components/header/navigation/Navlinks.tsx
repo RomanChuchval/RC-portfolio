@@ -1,0 +1,22 @@
+import React from 'react';
+import s from "./Navlinks.module.css";
+
+export const NavLinks = () => {
+    return (
+            <ul className={s.navlinks_list}>
+                <li>
+                    <a className={s.navlink_item} href="/#">Home</a>
+                </li>
+                <li>
+                    <a className={s.navlink_item} href="/#">Skills</a>
+                </li>
+                <li>
+                    <a className={s.navlink_item} href="/#">Projects</a>
+                </li>
+                <li>
+                    <a className={s.navlink_item} href="/#">Contacts</a>
+                </li>
+            </ul>
+    );
+};
+

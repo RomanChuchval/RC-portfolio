@@ -1,0 +1,19 @@
+.social_list {
+    display: flex;
+    position: relative;
+}
+
+.social_list::before {
+    content: '';
+    width: 1px;
+    height: 25px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.4);
+    position: relative;
+    top: 8px;
+}
+
+.social_item {
+    padding: 8px 19px;
+    font-size: 20px;
+}
