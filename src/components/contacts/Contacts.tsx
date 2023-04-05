@@ -1,22 +1,35 @@
 import React from 'react';
 import s from './Contacts.module.css'
 import sc from '../../common/styles/container.module.css'
+import {BlockTitle} from "../../common/components/BlockTitle";
+import {ContactForm} from "./ContactForm";
+import {ContactInfo} from "./ContactInfo";
+import {faLocationDot} from "@fortawesome/free-solid-svg-icons/faLocationDot";
+import {faPhone} from "@fortawesome/free-solid-svg-icons/faPhone";
+import {faAt} from "@fortawesome/free-solid-svg-icons/faAt";
 
 export const Contacts = () => {
+
+    const infoItemsArray = [
+        {title: 'Address', infoText: 'Minsk, Belarus', icon: faLocationDot },
+        {title: 'Phone', infoText: '+375 (25) 918-58-47', icon: faPhone },
+        {title: 'Email', infoText: 'rchuchvaldev@gmail.com', icon: faAt },
+    ]
+    const infoItems = infoItemsArray.map(i => {
+        return(
+            <ContactInfo key={i.title} title={i.title} infoText={i.infoText} icon={i.icon} />
+        )
+    })
     return (
         <div className={s.contacts_block}>
             <div className={`${s.contacts_container} ${sc.container}`}>
-                <div className={s.contacts_title_container}>
-                    <h3>Contact Me</h3>
+                <BlockTitle title={'Get In Touch'}/>
+                <div className={s.contacts_form_wrapper}>
+                    <div className={s.contacts_info_items}>
+                        {infoItems}
+                    </div>
+                    <ContactForm />
                 </div>
-                    <form className={s.contacts_form} action="">
-                        <input className={s.contacts_input} placeholder={'First name'} type="text"/>
-                        <input className={s.contacts_input} placeholder={'Last name'} type="text"/>
-                        <textarea className={s.contacts_textarea} placeholder={'Can i help you?'} name=""></textarea>
-                    </form>
-                <button className={s.contacts_send_btn} >
-                    Send
-                </button>
             </div>
         </div>
     );

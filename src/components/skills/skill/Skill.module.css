@@ -1,5 +1,4 @@
 .skill {
-    background-color: #2d2e36;
     margin: 15px 60px;
     width: 120px;
     padding: 10px;
@@ -8,7 +7,7 @@
     align-items: center;
     text-align: center;
     transition: 0.5s;
-    border: 2px solid #2d2e36;
+    border: 2px solid #26272f;
     position: relative;
     border-radius: 15px;
 }
@@ -40,13 +39,13 @@
     }
 }
 
-@media screen and (max-width: 735px) {
+@media screen and (max-width: 745px) {
     .skill{
         margin: 15px 20px;
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 595px) {
     .skill{
         margin: 10px 10px;
     }

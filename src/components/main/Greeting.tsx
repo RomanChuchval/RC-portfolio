@@ -4,10 +4,11 @@ import Typed from "typed.js";
 
 export const Greeting = () => {
 
-    const el = React.useRef(null);
+
+    const type = React.useRef(null);
     React.useEffect(() => {
-        const typed = new Typed(el.current, {
-            strings: ['React Developer.' , 'Front-end Developer.'],
+        const typed = new Typed(type.current, {
+            strings: ['Front-end Developer.'],
             typeSpeed: 90,
         });
         return () => {
@@ -22,7 +23,7 @@ export const Greeting = () => {
                 <span className={s.main_lastName}>Chuchval</span>
             </h1>
             <span className={s.main_based}>
-                Minsk based <span className={s.main_frontend} ref={el}/>
+                Minsk based <span className={s.main_frontend} ref={type}/>
             </span>
         </div>
     );

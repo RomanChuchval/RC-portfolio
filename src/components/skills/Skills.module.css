@@ -1,5 +1,6 @@
 .skills_block {
-    min-height: 100vh;
+    height: max-content;
+    padding-bottom: 20px;
     background-color: #26272f;
     display: flex;
     justify-content: center;

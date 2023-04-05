@@ -29,21 +29,15 @@
 
 @media screen and (max-width: 1050px ) {
     .main_photo{
-        width: 350px;
-        height: 350px;
+        width: 340px;
+        height: 340px;
     }
     .main_photo_wrapper{
-        width: 400px;
+        width: 342px;
         margin-top: 130px;
+        justify-content: center;
     }
     .main_container{
         flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 800px) {
-
-    .main_photo_wrapper {
-        justify-content: center;
     }
 }

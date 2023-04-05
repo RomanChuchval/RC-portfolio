@@ -1,8 +1,8 @@
 .projects_block {
     min-height: 100vh;
-    background-color: #eca9e4;
     display: flex;
     justify-content: center;
+    background-color: #212228;
 }
 
 .projects_container {
@@ -23,12 +23,11 @@
     background-color: #b0d3fc;
 }
 
-
 .projects{
-    border: 1px solid;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 10px;
 }

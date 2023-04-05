@@ -8,7 +8,7 @@ import useScrollPosition from "../../hooks/useScrollPosition";
 export const Header = () => {
     const scrollPosition = useScrollPosition()
 
-    const headerBlockClass = `${s.header_block} ${scrollPosition >= 910 ? s.fixed_top : ''}`
+    const headerBlockClass = `${s.header_block} ${scrollPosition >= 850 ? s.fixed_top : ''}`
 
     return (
         <div className={headerBlockClass}>

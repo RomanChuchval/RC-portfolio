@@ -1,0 +1,35 @@
+.contact_info_wrapper {
+    height: 60px;
+    display: flex;
+    margin: 15px 0;
+}
+
+.contact_info_icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 24px;
+    background-color: #fd562a;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.contact_info_text{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_info_title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+
+.contact_info{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #b0aac0;
+}

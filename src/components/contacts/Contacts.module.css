@@ -1,8 +1,9 @@
 .contacts_block {
-    background-color: #72b5fa;
+    background-color: #26272f;
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .contacts_container {
@@ -11,34 +12,21 @@
     justify-content: space-evenly;
 }
 
-.contacts_title_container {
-    background-color: #7ddb90;
+.contacts_form_wrapper{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
 }
 
-.contacts_form {
-    width: 280px;
-    border: 1px solid;
+.contacts_info_items{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    justify-content: space-between;
 }
 
-.contacts_input {
-    width: 100%;
-    background-color: #eca9e4;
-    height: 30px;
-    border: 1px solid;
-    padding: 5px;
-}
-
-.contacts_textarea {
-    background-color: #e8b35e;
-    width: 100%;
-    height: 100px;
-    padding: 5px;
-}
-
-.contacts_send_btn {
-    background-color: #7ddb90;
+@media screen and (max-width: 800px) {
+    .contacts_form_wrapper {
+        flex-direction: column;
+    }
 }
