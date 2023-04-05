@@ -6,6 +6,7 @@ export const Greeting = () => {
 
 
     const type = React.useRef(null);
+
     React.useEffect(() => {
         const typed = new Typed(type.current, {
             strings: ['Front-end Developer.'],

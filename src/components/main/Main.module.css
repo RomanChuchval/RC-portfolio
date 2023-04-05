@@ -21,6 +21,7 @@
 .main_photo {
     width: 410px;
     height: 410px;
+    border-radius: 50%;
 }
 
 .greeting_wrapper {
