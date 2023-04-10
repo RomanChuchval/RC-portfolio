@@ -56,7 +56,7 @@ export const AboutMe = () => {
                     </div>
                     <div className={s.about_info_wrapper}>
                         <span className={s.about_title}>About me</span>
-                        <h2 className={s.about_header}>Web Developer from Minsk</h2>
+                        <h2 className={s.about_header}>Front-end Developer from Minsk</h2>
                         {mappedInfo}
                         <div className={s.contacts_info_wrapper}>
                             <ul className={s.about_list}>

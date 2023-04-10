@@ -1,0 +1,38 @@
+.soft_skills_block {
+    padding: 40px 0;
+    min-height: 350px;
+    background-color: #2a2c33;
+    display: flex;
+    justify-content: center;
+}
+
+.soft_skills_container{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.soft_skill_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.soft_skills_title {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.soft_skills_icon {
+    font-size: 70px;
+    color: #fd562a;
+}
+
+@media screen and (max-width: 745px) {
+
+}
