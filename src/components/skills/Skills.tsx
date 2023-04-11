@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Skills.module.css'
-import sc from '../../common/styles/container.module.css'
+import sc from '../../common/styles/container.module.scss'
 import {Skill} from "./skill/Skill";
 import {BlockTitle} from "../../common/components/BlockTitle";
 import reactIcon from '../../assets/images/react2.png'

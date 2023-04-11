@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Header.module.css'
-import sc from '../../common/styles/container.module.css'
+import sc from '../../common/styles/container.module.scss'
 import {NavLinks} from "./navigation/Navlinks";
 import {NavSocial} from "./navigation/NavSocial";
 import useScrollPosition from "../../hooks/useScrollPosition";

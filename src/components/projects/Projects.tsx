@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Projects.module.css'
-import sc from '../../common/styles/container.module.css'
+import sc from '../../common/styles/container.module.scss'
 import {Project} from "./project/Project";
 import {BlockTitle} from "../../common/components/BlockTitle";
 import socialNetwork from '../../assets/images/social.png'

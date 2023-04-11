@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Footer.module.css'
-import sc from '../../common/styles/container.module.css'
+import sc from '../../common/styles/container.module.scss'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faInstagram, faLinkedin, faTelegram} from "@fortawesome/free-brands-svg-icons";
 

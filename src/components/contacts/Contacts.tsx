@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Contacts.module.css'
-import sc from '../../common/styles/container.module.css'
+import sc from '../../common/styles/container.module.scss'
 import {BlockTitle} from "../../common/components/BlockTitle";
 import {ContactForm} from "./ContactForm";
 import {ContactInfo} from "./ContactInfo";

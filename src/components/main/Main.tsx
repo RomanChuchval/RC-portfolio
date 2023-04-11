@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Main.module.css'
-import sc from '../../common/styles/container.module.css'
+import sc from '../../common/styles/container.module.scss'
 import myPhoto from '../../assets/images/2023-03-20 16.14.05.jpg'
 import {Greeting} from "./Greeting";
 import {MainButtons} from "./MainButtons";

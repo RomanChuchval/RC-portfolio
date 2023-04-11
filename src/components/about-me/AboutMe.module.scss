@@ -1,0 +1,103 @@
+@import '../../common/styles/variables';
+@import '../../common/styles/mixins';
+
+.about_block {
+  background-color: $backgroundBlack;
+  min-height: 100vh;
+  @include flex(row, center);
+
+  .about_container {
+    @include flex(row, center, center);
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .image_wrapper {
+      max-width: 455px;
+      height: 690px;
+      background-size: cover;
+      background-position: center;
+      margin-right: 120px;
+      border: 1px solid orangered;
+
+      .about_image {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media (max-width: 1300px) {
+        margin: 40px;
+        @media (max-width: 1200px) {
+          margin: 10px;
+          @media (max-width: 470px) {
+            width: 300px;
+            height: 500px;
+          }
+        }
+      }
+    }
+
+    .about_info_wrapper {
+      max-width: 600px;
+      min-height: 690px;
+      padding: 0 10px 10px 10px;
+      @include flex(column, space-between, flex-start);
+
+      .about_title {
+        @include text($poppinsFont, 700, 18px, $accentColor);
+      }
+
+      .about_header {
+        @include text($poppinsFont, 700, 48px);
+        line-height: 1.2;
+        margin: 0 0 30px 0;
+        @media (max-width: 470px) {
+          font-size: 38px;
+        }
+      }
+
+      .about_info {
+        @include text($openSansFont, 500, 18px, $textColorGray);
+        line-height: 1.7;
+        margin: 0 0 16px;
+      }
+
+      .contacts_info_wrapper {
+        @include flex(row, flex-start);
+
+        .about_list {
+          padding: 0 30px 0 0;
+
+          .about_list_item {
+            margin: 0 0 18px;
+
+            .about_list_header {
+              @include text($poppinsFont, 700, 16px);
+              text-transform: uppercase;
+              margin: 0 0 4px;
+            }
+
+            .about_list_description {
+              @include text($openSansFont, 500, 18px, $textColorGray);
+            }
+          }
+        }
+
+        @media (max-width: 470px) {
+          flex-direction: column;
+        }
+      }
+
+      .main_btn {
+        @include text($poppinsFont, 700, 16px);
+        margin-right: 17px;
+        padding: 15px 42px;
+        background: $accentColor;
+        border-radius: 5px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

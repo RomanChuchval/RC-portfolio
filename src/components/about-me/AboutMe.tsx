@@ -1,6 +1,6 @@
 import React from 'react';
-import s from './AboutMe.module.css'
-import sc from '../../common/styles/container.module.css'
+import s from './AboutMe.module.scss'
+import sc from '../../common/styles/container.module.scss'
 import aboutImage from '../../assets/images/developer.jpeg'
 
 export const AboutMe = () => {
@@ -49,8 +49,7 @@ export const AboutMe = () => {
 
     return (
         <div className={s.about_block}>
-            <div className={sc.container}>
-                <div className={s.about_container}>
+                <div className={`${sc.container} ${s.about_container}`}>
                     <div className={s.image_wrapper}>
                         <img className={s.about_image} src={aboutImage} alt="my_photo"/>
                     </div>
@@ -69,7 +68,6 @@ export const AboutMe = () => {
                         <button className={s.main_btn}>Download CV</button>
                     </div>
                 </div>
-            </div>
         </div>
     );
 };
