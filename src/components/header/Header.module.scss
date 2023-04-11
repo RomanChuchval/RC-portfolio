@@ -1,0 +1,32 @@
+@import '../../common/styles/mixins';
+@import '../../common/styles/variables';
+
+.header_block {
+    background-color: $backgroundBlack;
+    width: 100%;
+    padding: 24px 0;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    position: absolute;
+    transition: all 0.3s ;
+    &.fixed_top {
+        background-color: $backgroundBlack;
+        border-bottom: 2px solid $accentColor;
+        transform-origin: 100% 50%;
+        padding: 5px 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1001;
+    }
+    .header_container{
+        width: 100%;
+        @include flex($justify-content: flex-end, $align-items: center);
+        padding: 0 35px;
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+        }
+    }
+}

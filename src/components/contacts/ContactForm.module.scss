@@ -1,0 +1,60 @@
+@import '../../common/styles/mixins';
+@import '../../common/styles/variables';
+
+.contacts_form {
+  padding: 0 10px;
+  max-width: 700px;
+  @include flex(column, $align-items: flex-start);
+  margin: 15px 0;
+  @media screen and (max-width: 800px) {
+    align-items: center;
+  }
+
+  .contact_title {
+    @include text($poppinsFont, 700, 36px);
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .contacts_input_block {
+    width: 100%;
+    @include flex($justify-content: space-between);
+    margin: 10px 0;
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    .contacts_input {
+      margin: 10px 0;
+      padding: 12px 18px;
+      border: 1px solid $inputsBorderColor;
+      border-radius: 4px;
+      @include text($openSansFont, 500, 18px, $textColorGray);
+      background: #2a2c33;
+      width: 48%;
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .contacts_textarea {
+    padding: 12px 18px;
+    background: $formBackgroundColor;
+    border: 1px solid $inputsBorderColor;
+    border-radius: 4px;
+    width: 100%;
+    height: 100px;
+    margin: 0 0 16px;
+    color: $textColorGray;
+  }
+
+  .main_btn {
+    padding: 15px 42px;
+    background: $accentColor;
+    color: $btnTextColor;
+    border-radius: 5px;
+    @include text($poppinsFont, 700, 16px);
+    text-transform: uppercase;
+  }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Main.module.css'
+import s from './Main.module.scss'
 import sc from '../../common/styles/container.module.scss'
 import myPhoto from '../../assets/images/2023-03-20 16.14.05.jpg'
 import {Greeting} from "./Greeting";
@@ -15,7 +15,7 @@ export const Main = () => {
                     <div className={s.main_photo_wrapper}>
                         <img className={s.main_photo} src={myPhoto} alt="my_photo"/>
                     </div>
-                    <div className={s.greeting_wrapper}>
+                    <div>
                         <Greeting/>
                         <MainButtons/>
                     </div>

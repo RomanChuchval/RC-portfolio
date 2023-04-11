@@ -1,9 +1,8 @@
 .social_list {
-    display: flex;
-    position: relative;
-}
+  display: flex;
+  position: relative;
 
-.social_list:before {
+  &:before {
     content: '';
     width: 1px;
     height: 25px;
@@ -11,15 +10,13 @@
     background: rgba(255, 255, 255, 0.4);
     position: relative;
     top: 8px;
-}
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
 
-.social_item {
+  .social_item {
     padding: 8px 19px;
     font-size: 20px;
-}
-
-@media screen and (max-width: 800px) {
-   .social_list:before{
-        display: none;
-   }
+  }
 }

@@ -1,0 +1,36 @@
+@import '../../common/styles/mixins';
+@import '../../common/styles/variables';
+
+.soft_skills_block {
+  padding: 40px 0;
+  min-height: 350px;
+  background-color: $backgroundGray;
+  @include flex($justify-content: center);
+
+  .soft_skills_container {
+    @include flex($justify-content: center,
+    $align-items: center);
+    gap: 70px;
+    flex-wrap: wrap;
+
+    .soft_skill_wrapper {
+      @include flex($axis: column ,
+      $justify-content: center,
+      $align-items: center);
+
+      .soft_skills_title {
+        @include text($poppinsFont, 700, 24px);
+      }
+
+      .soft_skills_icon {
+        font-size: 60px;
+        color: $accentColor;
+      }
+    }
+  }
+
+}
+
+
+
+

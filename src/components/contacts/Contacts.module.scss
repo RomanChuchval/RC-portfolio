@@ -1,0 +1,25 @@
+@import '../../common/styles/mixins';
+@import '../../common/styles/variables';
+
+.contacts_block {
+  background-color: $backgroundGray;
+  min-height: 100vh;
+  @include flex(row, center, flex-start);
+
+  .contacts_container {
+    @include flex(column, space-evenly);
+
+    .contacts_form_wrapper {
+      margin-top: 60px;
+      @include flex(row, center);
+      gap: 70px;
+      @media screen and (max-width: 800px) {
+        flex-direction: column;
+      }
+
+      .contacts_info_items {
+        @include flex(column, space-between);
+      }
+    }
+  }
+}

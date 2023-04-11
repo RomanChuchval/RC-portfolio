@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Header.module.css'
+import s from './Header.module.scss'
 import sc from '../../common/styles/container.module.scss'
 import {NavLinks} from "./navigation/Navlinks";
 import {NavSocial} from "./navigation/NavSocial";

@@ -1,0 +1,35 @@
+@import '../../common/styles/mixins';
+@import '../../common/styles/variables';
+
+.main_buttons_wrapper {
+    margin-top: 60px;
+    @include flex($align-items: center);
+    height: max-content;
+    @media screen and (max-width: 1050px ){
+        flex-direction: column;
+    }
+    .main_btn {
+        margin-right: 17px;
+        padding: 15px 42px;
+        background: $accentColor;
+        color: $btnTextColor;
+        border-radius: 5px;
+        @include text($poppinsFont, 700, 16px);
+        text-transform: uppercase;
+        @media screen and (max-width: 1050px ){
+            margin: 10px;
+        }
+    }
+    .ghost_btn {
+        padding: 13px 40px;
+        background: transparent;
+        color: $btnTextColor;
+        border-radius: 5px;
+        @include text($poppinsFont, 700, 16px);
+        text-transform: uppercase;
+        border: 2px solid $accentColor;
+        @media screen and (max-width: 1050px ){
+            margin: 10px ;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import '../../common/styles/variables';
+@import '../../common/styles/mixins';
+
+.footer_block {
+  background-color: $backgroundBlack;
+  height: 200px;
+  @include flex($justify-content: center);
+
+  .footer_container {
+    @include flex(column, space-around, center);
+
+    .footer_title {
+      @include text($poppinsFont, 500, 16px);
+      margin-top: 10px;
+    }
+
+    .footer_social_media_block {
+      font-size: 26px;
+      width: 280px;
+      @include flex($align-items: center,
+      $justify-content: space-evenly);
+
+      .footer_social_icon {
+        @include flex($align-items: center, $justify-content: center);
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    .footer_copyright {
+      @include text($openSansFont, 200, 12px);
+      text-align: center;
+    }
+  }
+}
+
+
+
+
+
+
+
+

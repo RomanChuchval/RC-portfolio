@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './NavSocial.module.css'
+import s from './NavSocial.module.scss'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faInstagram, faLinkedin, faTelegram} from '@fortawesome/free-brands-svg-icons'
 

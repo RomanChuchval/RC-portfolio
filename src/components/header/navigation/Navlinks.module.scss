@@ -1,0 +1,15 @@
+@import '../../../common/styles/variables';
+@import '../../../common/styles/mixins';
+
+.navlinks_list {
+  display: flex;
+  text-transform: capitalize;
+  @include text($poppinsFont, 700, 18px);
+
+  .navlink_item {
+    padding: 8px 19px;
+    @media screen and (max-width: 426px) {
+      padding: 5px;
+    }
+  }
+}

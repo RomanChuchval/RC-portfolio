@@ -1,0 +1,19 @@
+@import '../../common/styles/mixins';
+@import '../../common/styles/variables';
+
+.projects_block {
+  min-height: 100vh;
+  @include flex($justify-content: center);
+  background-color: $backgroundBlack;
+
+  .projects_container {
+    @include flex($axis: column, $justify-content: flex-start);
+
+    .projects {
+      width: 100%;
+      @include flex($justify-content: center, $align-items: flex-start);
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+}

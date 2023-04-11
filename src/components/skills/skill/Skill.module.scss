@@ -1,0 +1,35 @@
+@import '../../../common/styles/mixins';
+@import '../../../common/styles/variables';
+
+.skill {
+    margin: 15px 60px;
+    width: 120px;
+    padding: 10px;
+    @include flex($axis: column, $align-items: center);
+    text-align: center;
+    transition: 0.5s;
+    border: 2px solid $backgroundGray;
+    position: relative;
+    border-radius: 15px;
+    @media screen and (max-width: 888px){
+        margin: 15px 40px;
+        @media screen and (max-width: 745px){
+            margin: 15px 20px;
+            @media screen and (max-width: 595px){
+                margin: 10px 10px;
+            }
+        }
+    }
+    &:hover{
+        border: 2px solid $accentColor;
+    }
+    .skill_icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+    }
+    .skill_title {
+        @include text($poppinsFont, 500, 16px);
+        margin-top: 10px;
+    }
+}

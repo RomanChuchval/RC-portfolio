@@ -1,0 +1,48 @@
+@import '../../common/styles/mixins';
+@import '../../common/styles/variables';
+
+.greeting_wrapper {
+  margin-top: 15px;
+  @media screen and (max-width: 1050px){
+    width: 324px;
+  }
+
+  .greeting {
+    @include text($poppinsFont, 700, 24px);
+    line-height: 1.2;
+  }
+
+  .main_firstName {
+    @include text($poppinsFont, 700, 90px);
+    line-height: 1.2;
+    @media screen and (max-width: 1050px){
+      font-size: 55px;
+    }
+
+    .main_lastName {
+      display: block;
+      @include text($poppinsFont, 700, 90px, $accentColor);
+      line-height: 1.2;
+      @media screen and (max-width: 1050px){
+        font-size: 55px;
+      }
+    }
+  }
+
+  .main_based {
+    @include text($openSansFont, 500, 24px, $textColorGray);
+    line-height: 1.2;
+    @media screen and (max-width: 1050px){
+      font-size: 18px;
+    }
+
+    .main_frontend {
+      padding-bottom: 10px;
+      @include text ($poppinsFont, 700, 24px);
+      line-height: 1.2;
+      @media screen and (max-width: 1050px){
+        font-size: 18px;
+      }
+    }
+  }
+}

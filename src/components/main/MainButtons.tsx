@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './MainButtons.module.css';
+import s from './MainButtons.module.scss';
 
 export const MainButtons = () => {
     return (

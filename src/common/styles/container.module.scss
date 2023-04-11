@@ -2,7 +2,7 @@
 @import './mixins';
 
 .container {
-    /*border: 1px solid green;*/
+    //border: 1px solid green;
     width: 90%;
     @include flex(row, flex-start, center);
     flex-wrap: wrap;

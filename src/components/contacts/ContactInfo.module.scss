@@ -1,0 +1,37 @@
+@import '../../common/styles/variables';
+@import '../../common/styles/mixins';
+
+.contact_info_wrapper {
+  height: 60px;
+  display: flex;
+  margin: 15px 0;
+
+  .contact_info_icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 24px;
+    background-color: $accentColor;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .contact_info_text {
+    @include flex(column);
+
+    .contact_info_title {
+      @include text($poppinsFont, 700, 24px);
+      line-height: 1.2;
+    }
+
+    .contact_info {
+      @include text($openSansFont, 500, 18px, $textColorGray);
+    }
+  }
+}
+
+
+
+
+

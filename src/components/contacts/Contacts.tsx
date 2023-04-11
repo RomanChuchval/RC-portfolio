@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Contacts.module.css'
+import s from './Contacts.module.scss'
 import sc from '../../common/styles/container.module.scss'
 import {BlockTitle} from "../../common/components/BlockTitle";
 import {ContactForm} from "./ContactForm";

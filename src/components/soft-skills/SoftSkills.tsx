@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './SoftSkills.module.css'
+import s from './SoftSkills.module.scss'
 import sc from "../../common/styles/container.module.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFaceSmile} from "@fortawesome/free-regular-svg-icons/faFaceSmile";
