@@ -4,13 +4,16 @@ import Typed from "typed.js";
 
 export const Greeting = () => {
 
-
     const type = React.useRef(null);
 
     React.useEffect(() => {
         const typed = new Typed(type.current, {
             strings: ['Front-end Developer.'],
             typeSpeed: 90,
+            loop: true,
+            backSpeed: 50,
+            startDelay: 800,
+            backDelay: 800
         });
         return () => {
             typed.destroy();
