@@ -6,7 +6,7 @@
     min-height: 100vh;
     @include flex ($justify-content: center);
     .main_container {
-        z-index: 100;
+        z-index: 50;
         width: 100%;
         padding: 0 35px;
         @include flex ($justify-content: center, $align-items: center);
