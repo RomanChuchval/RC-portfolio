@@ -7,7 +7,6 @@ import socialNetwork from '../../assets/images/social.png'
 import tasksManager from '../../assets/images/tasks_manager.png'
 import todolist from '../../assets/images/todolist.png'
 import learning_cards from '../../assets/images/learning-cards.avif'
-import { Slide } from 'react-awesome-reveal';
 
 type ProjectsArrayType = {
     title: string
@@ -57,7 +56,7 @@ export const Projects = () => {
     })
 
     return (
-        <div className={s.projects_block}>
+        <div id={'projects'} className={s.projects_block}>
             <div className={`${s.projects_container} ${sc.container}`}>
                 <BlockTitle title={'projects'}/>
                 <div className={s.projects}>

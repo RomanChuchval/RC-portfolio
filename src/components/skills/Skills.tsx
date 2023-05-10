@@ -46,7 +46,7 @@ export const Skills = () => {
 
 
     return (
-        <div className={s.skills_block}>
+        <div id={'skills'} className={s.skills_block}>
                 <div className={`${s.skills_container} ${sc.container}`}>
                     <Slide direction={"left"} triggerOnce={true}>
                     <BlockTitle title={'skills'}/>

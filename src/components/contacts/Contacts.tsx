@@ -22,7 +22,7 @@ export const Contacts = () => {
         )
     })
     return (
-        <div className={s.contacts_block}>
+        <div id={'contacts'} className={s.contacts_block}>
             <div className={`${s.contacts_container} ${sc.container}`}>
                 <BlockTitle title={'Get In Touch'}/>
                 <div className={s.contacts_form_wrapper}>

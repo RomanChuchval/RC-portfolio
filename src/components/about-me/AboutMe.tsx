@@ -16,14 +16,11 @@ export const AboutMe = () => {
         {title: 'Remote Work', info: 'Available'},
     ]
     const aboutMeInfo = [
-        ` Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
-
-        `Tabore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-        consequat.`
+        `Hi there! My name is Roman and I'm a front-end developer from Minsk. I'm 29 years old and have been working in web development for over 1 year. My passion for technology and design led me to web development, where I can create interactive, aesthetically pleasing, and multifunctional web applications.`,
+        `I have experience working with various programming languages, including HTML, CSS, TypeScript, and React framework. I also have experience working with various tools and libraries, such as Redux, Axios, Git and other.`,
+        `I'm a true enthusiast of web development and I'm ready to turn your ideas into reality! Get in touch with me to discuss how I can help you create a beautiful and functional web application.`
     ]
+
 
     const mappedFirstList = firstListData.map(el => {
         return (
@@ -49,7 +46,7 @@ export const AboutMe = () => {
 
 
     return (
-        <div className={s.about_block}>
+        <div id={'about-me'} className={s.about_block}>
             <div className={`${sc.container} ${s.about_container}`}>
                 <Slide direction={"left"} triggerOnce={true}>
                     <div className={s.image_wrapper}>

@@ -11,7 +11,7 @@ import {Slide} from "react-awesome-reveal";
 export const Main = () => {
 
     return (
-        <div className={s.main_block}>
+        <div id={'home'} className={s.main_block}>
             <Particle />
             <div className={sc.container}>
                 <div className={s.main_container}>

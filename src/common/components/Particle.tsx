@@ -23,7 +23,7 @@ export const Particle = () => {
                     particles: {
                         fullScreen: false,
                         number: {
-                            value: 190,
+                            value: 150,
                             density: {
                                 enable: false
                             }
@@ -32,8 +32,8 @@ export const Particle = () => {
                             value: 3,
                             random: true,
                             anim: {
-                                speed: 4,
-                                size_min: 0.3
+                                speed: 2,
+                                size_min: 1
                             }
                         },
                         line_linked: {
@@ -61,19 +61,19 @@ export const Particle = () => {
                         events: {
                             onclick: {
                                 enable: true,
-                                mode: "push"
+                                mode: "attract"
                             }
                         },
                         modes: {
                             bubble: {
                                 distance: 250,
                                 duration: 2,
-                                size: 0,
+                                size: 3,
                                 opacity: 0
                             },
                             repulse: {
                                 distance: 400,
-                                duration: 4
+                                duration: 15
                             }
                         }
                     }
