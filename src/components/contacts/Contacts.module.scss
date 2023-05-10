@@ -3,7 +3,7 @@
 
 .contacts_block {
   background-color: $backgroundGray;
-  min-height: 100vh;
+  padding-bottom: 80px;
   @include flex(row, center, flex-start);
 
   .contacts_container {
@@ -16,7 +16,6 @@
       @media screen and (max-width: 800px) {
         flex-direction: column;
       }
-
       .contacts_info_items {
         @include flex(column, space-between);
       }

@@ -2,6 +2,7 @@ import React from 'react';
 import s from './AboutMe.module.scss'
 import sc from '../../common/styles/container.module.scss'
 import aboutImage from '../../assets/images/developer.jpeg'
+import {Slide} from "react-awesome-reveal";
 
 export const AboutMe = () => {
 
@@ -49,11 +50,14 @@ export const AboutMe = () => {
 
     return (
         <div className={s.about_block}>
-                <div className={`${sc.container} ${s.about_container}`}>
+            <div className={`${sc.container} ${s.about_container}`}>
+                <Slide direction={"left"} triggerOnce={true}>
                     <div className={s.image_wrapper}>
                         <img className={s.about_image} src={aboutImage} alt="my_photo"/>
                     </div>
-                    <div className={s.about_info_wrapper}>
+                </Slide>
+                <div className={s.about_info_wrapper}>
+                    <Slide direction={"right"} triggerOnce={true}>
                         <span className={s.about_title}>About me</span>
                         <h2 className={s.about_header}>Front-end Developer from Minsk</h2>
                         {mappedInfo}
@@ -66,8 +70,9 @@ export const AboutMe = () => {
                             </ul>
                         </div>
                         <button className={s.main_btn}>Download CV</button>
-                    </div>
+                    </Slide>
                 </div>
+            </div>
         </div>
     );
 };

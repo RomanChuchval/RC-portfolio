@@ -11,6 +11,9 @@ export const NavLinks = () => {
                     <a className={s.navlink_item} href="/#">Skills</a>
                 </li>
                 <li>
+                    <a className={s.navlink_item} href="/#">About Me</a>
+                </li>
+                <li>
                     <a className={s.navlink_item} href="/#">Projects</a>
                 </li>
                 <li>

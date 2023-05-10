@@ -5,10 +5,30 @@
   display: flex;
   text-transform: capitalize;
   @include text($poppinsFont, 700, 18px);
-
+  @media screen and (max-width: 730px) {
+    @include text($poppinsFont, 700, 16px);
+    @include flex(row, center,center);
+    flex-wrap: wrap;
+  }
   .navlink_item {
     padding: 8px 19px;
-    @media screen and (max-width: 426px) {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 80%;
+      height: 2px;
+      bottom: 5px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+      &:hover {
+        &::after{
+          background-color: $accentColor;
+          transition: all 0.5s;
+        }
+      }
+    @media screen and (max-width: 630px) {
       padding: 5px;
     }
   }

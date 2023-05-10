@@ -17,6 +17,7 @@ import postmanIcon from '../../assets/images/postman.svg'
 import muiIcon from '../../assets/images/mui.png'
 import gitIcon from '../../assets/images/git.png'
 import antIcon from '../../assets/images/antd.png'
+import {Slide} from "react-awesome-reveal";
 
 export const Skills = () => {
 
@@ -46,12 +47,14 @@ export const Skills = () => {
 
     return (
         <div className={s.skills_block}>
-            <div className={`${s.skills_container} ${sc.container}`}>
-               <BlockTitle title={'skills'}/>
-                <div className={s.skills}>
-                    {skillsList}
+                <div className={`${s.skills_container} ${sc.container}`}>
+                    <Slide direction={"left"} triggerOnce={true}>
+                    <BlockTitle title={'skills'}/>
+                    <div className={s.skills}>
+                        {skillsList}
+                    </div>
+                    </Slide>
                 </div>
-            </div>
         </div>
     );
 };

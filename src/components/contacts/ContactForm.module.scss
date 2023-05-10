@@ -56,5 +56,9 @@
     border-radius: 5px;
     @include text($poppinsFont, 700, 16px);
     text-transform: uppercase;
+    transition: transform 0.5s ease-in-out;
+    &:hover{
+      transform: scale(1.1);
+    }
   }
 }

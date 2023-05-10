@@ -6,11 +6,12 @@
     content: '';
     width: 1px;
     height: 25px;
+    margin: 0 5px;
     display: inline-block;
     background: rgba(255, 255, 255, 0.4);
     position: relative;
     top: 8px;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1020px) {
       display: none;
     }
   }

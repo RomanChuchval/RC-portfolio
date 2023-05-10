@@ -7,6 +7,7 @@ import {ContactInfo} from "./ContactInfo";
 import {faLocationDot} from "@fortawesome/free-solid-svg-icons/faLocationDot";
 import {faPhone} from "@fortawesome/free-solid-svg-icons/faPhone";
 import {faAt} from "@fortawesome/free-solid-svg-icons/faAt";
+import { Slide } from 'react-awesome-reveal';
 
 export const Contacts = () => {
 
@@ -25,10 +26,14 @@ export const Contacts = () => {
             <div className={`${s.contacts_container} ${sc.container}`}>
                 <BlockTitle title={'Get In Touch'}/>
                 <div className={s.contacts_form_wrapper}>
-                    <div className={s.contacts_info_items}>
-                        {infoItems}
-                    </div>
+                    <Slide direction={"left"} triggerOnce={true}>
+                        <div className={s.contacts_info_items}>
+                            {infoItems}
+                        </div>
+                    </Slide>
+                    <Slide direction={"right"} triggerOnce={true}>
                     <ContactForm />
+                    </Slide>
                 </div>
             </div>
         </div>

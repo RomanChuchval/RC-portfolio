@@ -6,6 +6,8 @@ import {BlockTitle} from "../../common/components/BlockTitle";
 import socialNetwork from '../../assets/images/social.png'
 import tasksManager from '../../assets/images/tasks_manager.png'
 import todolist from '../../assets/images/todolist.png'
+import learning_cards from '../../assets/images/learning-cards.avif'
+import { Slide } from 'react-awesome-reveal';
 
 type ProjectsArrayType = {
     title: string
@@ -38,6 +40,13 @@ export const Projects = () => {
             image: {
                 backgroundImage: `url(${todolist})`
             }
+        },
+        {
+            title: 'Learning cards',
+            description: 'React project with Redux Toolkit, TypeScript, MUI',
+            image: {
+                backgroundImage: `url(${learning_cards})`
+            }
         }
     ]
     const projects = projectsArray.map(proj => {
@@ -52,7 +61,7 @@ export const Projects = () => {
             <div className={`${s.projects_container} ${sc.container}`}>
                 <BlockTitle title={'projects'}/>
                 <div className={s.projects}>
-                    {projects}
+                        {projects}
                 </div>
             </div>
 

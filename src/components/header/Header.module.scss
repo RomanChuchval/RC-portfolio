@@ -2,6 +2,7 @@
 @import '../../common/styles/variables';
 
 .header_block {
+    z-index: 100;
     background-color: $backgroundBlack;
     width: 100%;
     padding: 24px 0;
@@ -25,7 +26,7 @@
         width: 100%;
         @include flex($justify-content: flex-end, $align-items: center);
         padding: 0 35px;
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 1020px) {
             flex-direction: column;
         }
     }

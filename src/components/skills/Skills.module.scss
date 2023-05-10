@@ -5,12 +5,11 @@
     height: max-content;
     padding-bottom: 20px;
     background-color: $backgroundGray;
-    @include flex($justify-content: center);
+    @include flex(row, center, center);
     .skills_container {
-        @include flex(column, flex-start, center);
+        @include flex(column, center, center);
         .skills {
             @include flex($justify-content: center);
-            width: 90%;
             flex-wrap: wrap;
         }
     }

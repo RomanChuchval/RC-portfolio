@@ -16,8 +16,12 @@
         border-radius: 5px;
         @include text($poppinsFont, 700, 16px);
         text-transform: uppercase;
+        transition: transform 0.5s ease-in-out;
         @media screen and (max-width: 1050px ){
             margin: 10px;
+        }
+        &:hover{
+            transform: scale(1.1);
         }
     }
     .ghost_btn {
@@ -28,8 +32,12 @@
         @include text($poppinsFont, 700, 16px);
         text-transform: uppercase;
         border: 2px solid $accentColor;
+        transition: transform 0.5s ease-in-out;
         @media screen and (max-width: 1050px ){
             margin: 10px ;
+        }
+        &:hover{
+            transform: scale(1.1);
         }
     }
 }

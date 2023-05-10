@@ -5,15 +5,19 @@
   min-height: 100vh;
   @include flex($justify-content: center);
   background-color: $backgroundBlack;
-
+  padding-bottom: 50px;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+  }
   .projects_container {
-    @include flex($axis: column, $justify-content: flex-start);
+    @include flex($axis: column, $justify-content: flex-start, $align-items: center);
 
     .projects {
       width: 100%;
       @include flex($justify-content: center, $align-items: flex-start);
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 50px;
     }
   }
 }
