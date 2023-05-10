@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/RC-portfolio/static/css/main.eca03d69.css",
+    "main.css": "/RC-portfolio/static/css/main.26e1b4ed.css",
     "main.js": "/RC-portfolio/static/js/main.60642b66.js",
     "static/js/787.1ed0c42c.chunk.js": "/RC-portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/tasks_manager.png": "/RC-portfolio/static/media/tasks_manager.330d434ba9f0047f96e2.png",
@@ -20,12 +20,12 @@
     "static/media/redux.svg": "/RC-portfolio/static/media/redux.0e4fb1c819ac4c060c92343147d4ccf7.svg",
     "index.html": "/RC-portfolio/index.html",
     "static/media/storybook.svg": "/RC-portfolio/static/media/storybook.ec779d7e96e70ca2d11eaf29c160c2e8.svg",
-    "main.eca03d69.css.map": "/RC-portfolio/static/css/main.eca03d69.css.map",
+    "main.26e1b4ed.css.map": "/RC-portfolio/static/css/main.26e1b4ed.css.map",
     "main.60642b66.js.map": "/RC-portfolio/static/js/main.60642b66.js.map",
     "787.1ed0c42c.chunk.js.map": "/RC-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eca03d69.css",
+    "static/css/main.26e1b4ed.css",
     "static/js/main.60642b66.js"
   ]
 }
