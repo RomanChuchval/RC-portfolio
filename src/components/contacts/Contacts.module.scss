@@ -3,7 +3,7 @@
 
 .contacts_block {
   background-color: $backgroundGray;
-  padding-bottom: 80px;
+  padding: 100px 0 130px;
   @include flex(row, center, flex-start);
 
   .contacts_container {
