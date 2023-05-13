@@ -23,7 +23,7 @@ export const NavSocial = () => {
                 </a>
             </li>
             <li className={s.social_item}>
-                <a href="https://www.linkedin.com/in/%D1%80%D0%BE%D0%BC%D0%B0%D0%BD-%D1%87%D1%83%D1%87%D0%B2%D0%B0%D0%BB-793994256/"
+                <a href="https://www.linkedin.com/in/chuchval/"
                    target={'_blank'} rel={'noreferrer'}>
                     <FontAwesomeIcon icon={faLinkedin} style={{color: "#ffffff",}}/>
                 </a>
